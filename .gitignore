@@ -65,7 +65,7 @@ sftp-config.json
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
 
 ## Directory-based project format
-.idea/
+#.idea/
 # if you remove the above rule, at least ignore user-specific stuff:
 # .idea/workspace.xml
 # .idea/tasks.xml
@@ -123,8 +123,8 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
-cms/cache/*
-Conf/logs/*
+#cms/cache/*
+#Conf/logs/*
 
 
 
