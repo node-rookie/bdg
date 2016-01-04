@@ -1,0 +1,307 @@
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>{pigcms:$info['title']}</title>
+<script type="text/javascript" src="{pigcms:$staticPath}/tpl/static/public-framework/scripts/jquery.js"></script>
+<link href="{pigcms:$staticPath}/tpl/static/public-framework/styles/framework.css" rel="stylesheet" type="text/css">
+<link href="{pigcms:$staticPath}/tpl/static/public-framework/styles/owl.carousel.css" rel="stylesheet" type="text/css">
+<link href="{pigcms:$staticPath}/tpl/static/public-framework/styles/owl.theme.css" rel="stylesheet" type="text/css">
+<link href="{pigcms:$staticPath}/tpl/static/public-framework/styles/swipebox.css"  rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{pigcms:$staticPath}/tpl/static/alert.js"></script>
+<link href="{pigcms:$staticPath}/tpl/static/helping/countdown/jquery.countdown.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{pigcms:$staticPath}/tpl/static/helping/countdown/jquery.countdown.js"></script>
+<script type="text/javascript" src="{pigcms:$staticPath}/tpl/static/helping/js/script.js"></script>
+
+<link href="/tpl/static/helping/css/index2.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function swapStyleSheet(sheet){
+	document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+</script>
+
+</head>
+<body>
+<if condition="$memberNotice neq ''">
+    {pigcms:$memberNotice}
+</if>
+
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+            <em>Loading...</em>
+        </p>
+    </div>
+</div>
+
+<div class="all-elements">
+    <div id="content" class="page-content">
+    	<div class="content-controls solid-color fixed-header">
+            <if condition="$is_over eq 1">
+                <a class="button-big button-turqoise" href="javascript:void(0);" style="background:#5a5a5a;">活动还没开始</a>
+            <elseif condition="$is_over eq 2"/>    
+                <a class="button-big button-turqoise" href="javascript:void(0);" style="background:#5a5a5a;">活动已经结束</a>
+            <elseif condition="$share_key neq ''"/>
+                <a class="button-big button-turqoise" href="{pigcms::U('Helping/index',array('token'=>$token,'wecha_id'=>$wecha_id,'id'=>$info['id']))}">进入我的分享页面</a>
+			<else/>
+                <if condition="$memberNotice eq ''">
+                   <a class="button-big button-turqoise" id="share" href="javascript:void(0);">找朋友助力</a>
+                <else/>
+                   <a class="button-big button-turqoise"  href="#memberNoticeBox" id="modaltrigger_notice">我要参加</a>
+                </if>
+            </if>
+        </div>    
+        
+		<!--gift start-->
+		<div class="content">
+            <div class="container">
+                <div class="top_pic">
+                    <img src="{pigcms:$info['reply_pic']}" alt="{pigcms:$info['title']}">
+                </div>
+				<!--gift start-->
+				<div class="wechaimg"><img src="{pigcms:$user.portrait}"></div>
+				 <div class="topmain">
+					<div class="wechaidinfo">
+						<span class="name"><b>{pigcms:$user.username}</b></span>
+						<span class="allcounts">分享值</span>
+						<span class="nums"><i class="red-b">{pigcms:$user.help_count}</i></span>
+					</div>
+					<div class="shares">
+						<span class="shareinfo">分享次数<br><i class="red-b">{pigcms:$user.sharecount}</i></span>
+						<span class="line"></span>
+						<span class="countsinfo">当前排名<br>第<i class="red-b">{pigcms:$user.help_rank}</i>名</span>
+					</div>
+				 </div>
+				 <!--gift end-->
+                <div class="blank"></div>
+                <div class="title">
+                    {pigcms:$info['title']}
+                </div>
+                <div class="blank"></div>
+                <div class="times">
+                    <span class="time-ico">
+                        活动时间：{pigcms:$info['start']|date="m月d日",###} - {pigcms:$info['end']|date="m月d日 H时i分",###}
+                    </span>
+                </div>
+                <div class="blank"></div>
+                <if condition="$is_over eq 0">
+                    <div class="countdown" id="countdown" endtime="{pigcms:$info['end']}"></div>
+                    <div class="blank"></div>
+                </if>
+				<!-- <div class="title">
+                    你为 <i class="cl-red">{pigcms:$user.username}</i> 投得一票！<br />
+				</div> -->
+				<if condition="$share_key neq ''">
+				<div class="title">
+                    <i class="cl-red">↓↓参加请点击< 我的分享页面 >↓↓</a></i><br />
+				</div>
+				</if>
+            </div> 
+        </div> 
+		<!--gift end-->
+		<div class="blank"></div>
+		<!--sharelist start-->
+		<if condition="$info['frist'] neq ''">
+		<div class="content">
+            <div class="rank_title">
+                <div class="top">奖品信息</div>
+                <!--<div class="cot">
+                    参与活动人数: 
+                    <i class="cl-green">{pigcms:$count}</i>
+                </div>-->
+            </div>
+        </div>
+		 <div class="content half-bottom">
+            <div class="container no-bottom">
+			
+            	<div class="column-responsive half-bottom">
+            		<img src="{pigcms:$info['fristpic']}">
+                    <div class="info">
+                    	<b> {pigcms:$info['frist']}</b>
+                    	<div class="con">
+	                    	<i class="diagram-list"></i>
+	                    	<span class="num">数量：{pigcms:$info['fristnums']}</span>
+	                    	<span class="time">{pigcms:$info['fristdoc']}</span>
+	                    </div>
+	                    <i class="ic_rank1">一等奖奖品</i>
+                	</div>
+            	</div> 
+				<if condition="$info['second'] neq ''">
+				<div class="jiang-bottom"></div>
+				<div class="column-responsive half-bottom">
+            		<img src="{pigcms:$info['secondpic']}">
+                    <div class="info">
+                    	<b> {pigcms:$info['second']}</b>
+                    	<div class="con">
+	                    	<i class="diagram-list"></i>
+	                    	<span class="num">数量：{pigcms:$info['secondnums']}</span>
+	                    	<span class="time">{pigcms:$info['seconddoc']}</span>
+	                    </div>
+	                    <i class="ic_rank1">二等奖奖品</i>
+                	</div>
+            	</div>
+				</if>
+				<if condition="$info['third'] neq ''">
+				<div class="jiang-bottom"></div>
+				<div class="column-responsive half-bottom">
+            		<img src="{pigcms:$info['thirdpic']}">
+                    <div class="info">
+                    	<b> {pigcms:$info['third']}</b>
+                    	<div class="con">
+	                    	<i class="diagram-list"></i>
+	                    	<span class="num">数量：{pigcms:$info['thirdnums']}</span>
+	                    	<span class="time">{pigcms:$info['thirddoc']}</span>
+	                    </div>
+	                    <i class="ic_rank1">三等奖奖品</i>
+                	</div>
+            	</div>
+				</if>
+				<if condition="$info['four'] neq ''">
+				<div class="jiang-bottom"></div>
+				<div class="column-responsive half-bottom">
+            		<img src="{pigcms:$info['fourpic']}">
+                    <div class="info">
+                    	<b> {pigcms:$info['four']}</b>
+                    	<div class="con">
+	                    	<i class="diagram-list"></i>
+	                    	<span class="num">数量：{pigcms:$info['fournums']}</span>
+	                    	<span class="time">{pigcms:$info['fourdoc']}</span>
+	                    </div>
+	                    <i class="ic_rank1">四等奖奖品</i>
+                	</div>
+            	</div>
+				</if>
+				<if condition="$info['five'] neq ''">
+				<div class="jiang-bottom"></div>
+				<div class="column-responsive half-bottom">
+            		<img src="{pigcms:$info['fivepic']}">
+                    <div class="info">
+                    	<b> {pigcms:$info['five']}</b>
+                    	<div class="con">
+	                    	<i class="diagram-list"></i>
+	                    	<span class="num">数量：{pigcms:$info['fivenums']}</span>
+	                    	<span class="time">{pigcms:$info['fivedoc']}</span>
+	                    </div>
+	                    <i class="ic_rank1">五等奖奖品</i>
+                	</div>
+            	</div>
+				</if>
+                <div class="clear"></div>
+            </div>
+        </div>
+		</if>
+		<!--sharelist end-->
+		<div class="blank"></div>
+		<!--sharelist start-->
+		 <div class="content">
+            <div class="rank_title">
+                <div class="top">TOP20</div>
+                <div class="cot">
+                    参与活动人数: 
+                    <i class="cl-green">{pigcms:$count}</i>
+                </div>
+            </div>
+        </div>
+		<!--sharelist end-->
+        <div class="content">
+            <div class="container">
+            	<table class="table" border="0" width="100%">
+                    <tr>
+                        <th>排名</th>
+                        <th>姓名</th>
+                        <th>分享值</th>
+						<if condition="$info.is_score eq '1'"><th>获得积分</th></if>
+                        <th>助力指数</th>
+                    </tr>
+                    <volist id="rank" name="rank" key="key">
+                    <tr>
+                        <td>{pigcms:$key}</td>
+                        <td>{pigcms:$rank.username}</td>
+						<td>{pigcms:$rank.help_count}</td>
+                        <if condition="$info.is_score eq '1'"><td>{pigcms:$rank.help_score}</td></if>
+                        <td>{pigcms:$rank.nums}%</td>
+                    </tr>
+                    </volist>
+                </table>
+            </div>
+        </div>
+		<!-- 规则开始 -->
+		<div class="blank"></div>
+		<!--sharelist start-->
+		 <div class="content">
+            <div class="rank_title">
+                <div class="top">活动规则</div>
+            </div>
+        </div>
+		<!--sharelist end-->
+		<div class="content">
+            <div class="container con-last">
+				<div class="rule">
+					{pigcms:$info['info']|htmlspecialchars_decode}
+                </div>
+			</div>  
+		</div>
+		<!-- 规则 END -->
+    </div>  
+</div>
+<div class="share_bg">
+    <img src="/tpl/static/live/default/share-guide.png">
+</div>
+<script type="text/javascript">
+/*<if condition="$is_over gt 0">
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() { 
+	WeixinJSBridge.call('hideOptionMenu');
+});
+<else/>
+document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {   
+	WeixinJSBridge.call('showOptionMenu');
+});
+</if>*/
+</script>
+
+<script type="text/javascript">
+$(function(){
+	$('#share').click(function(){
+		$('.share_bg').css('display','block');
+	});
+	
+	$('.share_bg').click(function(){
+		if($(this).css('display') == 'block'){
+			$(this).css('display','none');
+		}
+	});
+
+    <if condition="$share_key neq '' and $is_over eq 0">
+    	$.getJSON("{pigcms::U('Helping/add_share',array('token'=>$token,'id'=>$info['id']))}",{share_key:'{pigcms:$share_key}',wecha_id:'{pigcms:$wecha_id}'},function(res){
+    		alert(res.info);
+    	}); 
+    </if>
+
+});
+
+</script>
+
+<script type="text/javascript">
+window.shareData = {  
+            "moduleName":"Helping",
+            "moduleID":"{pigcms:$info.id}",
+			"pid": "{pigcms:$info.id}", 
+            "imgUrl": "{pigcms:$info.top_pic}", 
+            "timeLineLink": "{pigcms:$f_siteUrl}{pigcms::U('Helping/index',array('token'=>$token,'id'=>$info['id'],'share_key'=>$user['share_key']))}",
+            "sendFriendLink": "{pigcms:$f_siteUrl}{pigcms::U('Helping/index',array('token'=>$token,'id'=>$info['id'],'share_key'=>$user['share_key']))}",
+			"sendQQLink": "{pigcms:$f_siteUrl}{pigcms::U('Helping/index',array('token'=>$token,'id'=>$info['id'],'share_key'=>$user['share_key']))}",
+            "weiboLink": "{pigcms:$f_siteUrl}{pigcms::U('Helping/index',array('token'=>$token,'id'=>$info['id'],'share_key'=>$user['share_key']))}",
+            "tTitle": "{pigcms:$info.title}",
+            "tContent": "{pigcms:$user.username}当前分享值:{pigcms:$user.help_count} ，排名: 第{pigcms:$user.help_rank}名，请求你祝TA一臂之力赢取一等奖：{pigcms:$info['frist']}！{pigcms:$info['title']}"
+};
+</script>
+{pigcms:$shareScript}
+
+<script type="text/javascript" src="{pigcms:$staticPath}/tpl/static/public-framework/scripts/owl.carousel.min.js"></script>
+<script type="text/javascript" src="{pigcms:$staticPath}/tpl/static/public-framework/scripts/jquery.swipebox.js"></script>
+<script type="text/javascript" src="{pigcms:$staticPath}/tpl/static/public-framework/scripts/framework.launcher.js"></script>
+
+</body>
+</html>

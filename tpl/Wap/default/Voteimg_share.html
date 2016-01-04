@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><if condition="$action_info['action_name']">{pigcms:$action_info['action_name']}</if></title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+<script type="text/javascript" src="{pigcms:$staticPath}/tpl/static/voteimg/js/jquery-1.4.2.min.js"></script>
+<link  rel="stylesheet" type="text/css" href="{pigcms:$staticPath}/tpl/static/voteimg/css/style.css"/>
+<link rel="stylesheet" type="text/css" href="{pigcms:$staticPath}/tpl/static/voteimg/css/style_PageDefault.css">
+<link rel="stylesheet" type="text/css" href="{pigcms:$staticPath}/tpl/static/voteimg/css/style_PageMaster.css">
+<div id="babydiv2">
+<if condition="$memberNotice neq ''">
+	{pigcms:$memberNotice}
+</if>
+<div  id="babydiv3">
+  <if condition="$item neq ''">
+  <div id="babydiv6" style="margin-top:1px;">
+	<div id="content_pic" style="border:solid 2px #fff;">
+		<img src="{pigcms:$item.vote_img}"/>    
+	</div> 
+	<div  id="babydiv4" > {pigcms:$item.vote_title} </div>
+	<div  id="babydiv5" >
+	 ——<span class="xiangx">已有</span><span class="xiangx1">{pigcms:$item.vote_count}</span><span class="xiangx">票</span> ——</div></div>
+	 <div id="babydiv7" id="sharelp"><a target="_blank" href="javascript:;"> <button class="STYLE1" id="content_button" onclick="my_vote({pigcms:$item_id})" style="height:35px">投票</button> </a> </div>
+	 	 <div id="babydiv7" id="sharelp"><a href="{pigcms::U('Voteimg/index',array('id'=>$vote_id,'token'=>$token))}"> <button class="STYLE1" id="content_button" style="height:35px">报名</button> </a> </div>
+	 <else />
+	 <div id="babydiv6">
+	<img src="{pigcms:$staticPath}/tpl/static/voteimg/img/nobady.jpg" height="200px" width="100px"/>     
+	<div id="babydiv4"> 暂无记录 </div></div>
+	 </if>
+   </div>
+ </div>
+<div id="vote_notice" style="z-index:99;left:65%;top: 30%;width:200px;height:40px; line-height:40px;color:#fff; font-size:18px;  border-radius: 9px;  background-color: #2dcc70;  margin: 0 auto; text-align:center; font-family:'微软雅黑';margin-left:-150px!important;margin-top:-60px!important;margin-top:0px;position:fixed!important;display:none">投票成功</div>
+<div id="bg" class="bg" style="display:none;"></div>
+<script type="text/javascript">
+//提示信息
+function votenotice(text){
+	$("#vote_notice").text(text);
+	$("#vote_notice").show();
+	$("#bg").show();
+	$("#vote_notice").fadeOut(1500);
+	$("#bg").fadeOut(1500);
+}
+//投票
+function my_vote(id){
+	$.ajaxSetup({
+		async: false
+	});
+	if(id){
+		var msg = '';
+		$.get("/index.php?g=Wap&m=Voteimg&a=vote&vote_id={pigcms:$vote_id}&token={pigcms:$token}&id="+id,function(data){
+			if(data == 'done'){
+				msg = '投票成功';
+				var vid = $(".xiangx1").text();
+				$(".xiangx1").text((parseInt(vid)+1));
+			}else{
+				msg = data;
+			}
+			votenotice(msg);
+		});
+	}else{
+		votenotice();
+	}
+}
+</script>

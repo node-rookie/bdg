@@ -1,0 +1,80 @@
+<if condition="$ischild neq 1">
+<include file="Public:head" />
+<else />
+<include file="Repast:head" />
+</if>
+<link rel="stylesheet" type="text/css" href="{pigcms::RES}/css/cymain.css" />
+<div class="content">
+<div class="cLineB">
+<h4 class="left">团购商品管理({pigcms:$page})</h4>
+<div class="clr"></div>
+</div>
+<!--tab start-->
+<div class="tab">
+<ul>
+	<li class="current tabli" id="tab8"><a href="{pigcms::U('Storenew/grouponproduct',array('token'=>$token,'cid' => $cid))}">团购商品</a></li>
+	<li class="tabli" id="tab8"><a href="{pigcms::U('Storenew/groupon',array('token'=>$token,'cid' => $cid))}">团购管理</a></li>
+	<li class="tabli" id="tab2"><a href="{pigcms::U('Storenew/grouponorders',array('token'=>$token,'cid'=>$cid))}">团购订单</a></li>
+	<li class="tabli" id="tab2"><a href="{pigcms::U('Storenew/groupontuikuan',array('token'=>$token,'cid'=>$cid))}">团购退款</a></li>
+</ul>
+</div>
+<!--tab end-->
+<div class="cLine">
+<div class="pageNavigator left">
+<a href="{pigcms::U('Storenew/addNew', array('token' => $token, 'catid' => $catid))}" title="添加" class="btnGrayS vm bigbtn">
+<img src="{pigcms::RES}/images/product/add.png" width="16" class="vm">添加商品</a>
+</div>
+<div class="pageNavigator right">
+	<a href="{pigcms::U('Storenew/index',array('token'=>$token,'catid'=>$catid))}" class="btnGrayS vm bigbtn">返回</a>
+</div>
+<div class="clr"></div>
+</div>
+<div class="msgWrap">
+<form method="post" action="" id="info">
+<input name="delall" type="hidden" value="">
+<input name="wxid" type="hidden" value="">
+<table class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="100%">
+<thead>
+<tr>
+<th width="50">排序ID</th>
+<th width="160">商品名称</th>
+<th width="120">价格</th>
+<th width="60">库存</th>
+<th width="60">销量</th>
+<th width="100">关键词</th>
+<th width="80">所属类别</th>
+<th width="150">创建时间</th>
+<th width="150" class="norightborder">操作</th>
+</tr>
+</thead>
+<tbody>
+<tr></tr>
+<volist name="list" id="hostlist"> 
+<tr>
+<td>{pigcms:$hostlist.sort}</td>
+<td>{pigcms:$hostlist.name}<if condition="$hostlist.status eq '1'"><br><font color="red">[已下架]</font></if></td>
+<td>销售价：{pigcms:$hostlist.price} 元<br>团购价：{pigcms:$hostlist.tgprice} 元</td>
+<td>{pigcms:$hostlist.num}</td>
+<td>{pigcms:$hostlist.salecount}</td>
+<td>{pigcms:$hostlist.keyword}</td>
+<td>{pigcms:$hostlist.catname}</td>
+<td>{pigcms:$hostlist.time|date="Y-m-d H:i:s",###}</td> 
+<td class="norightborder" align="center">
+	<a href="{pigcms::U('Storenew/addNew',array('id' => $hostlist['id'], 'token' => $token,'catid' => $hostlist['catid']))}">修改</a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="javascript:drop_confirm('您确定要删除吗?', '{pigcms::U('Storenew/del',array('id'=>$hostlist['id'],'token'=>$token,'catid'=>$hostlist['catid']))}');">删除</a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="{pigcms::U('Storenew/comment', array('pid'=>$hostlist['id'],'token'=>$token,'catid'=>$hostlist['catid']))}">用户评论</a>
+</td>
+</tr>
+</volist>
+</tbody>
+</table>
+</form>
+</div>
+<div class="cLine">
+<div class="pageNavigator right">
+<div class="pages">{pigcms:$page}</div>
+</div>
+<div class="clr"></div>
+</div>
+</div>
+<include file="Public:footer"/>

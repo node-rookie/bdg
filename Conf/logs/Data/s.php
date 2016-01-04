@@ -1,0 +1,1 @@
+<?php	return array ( 'token' => 'wvibhg1434526733', 'wecha_id' => 'oHuvWs_uukKpx33fpYg0jAcgsWRk', 'to' => 'frined', 'module' => 'Store', 'moduleid' => 54, 'time' => 1434614380, 'url' => 'http://youyiguo.softphs.cn/index.php?g=Wap&amp;m=Storenew&amp;a=grouponshare&amp;token=wvibhg1434526733&amp;codeid=a873e31469c9933e&amp;twid=Bgi104&amp;cid=24', ); ?>

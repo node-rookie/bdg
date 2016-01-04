@@ -1,0 +1,46 @@
+<include file="Public:head"/>
+<script src="{pigcms:$staticPath}/tpl/static/upyun.js" type="text/javascript"></script>
+<script src="{pigcms:$staticPath}/tpl/static/artDialog/jquery.artDialog.js?skin=default" type="text/javascript"></script>
+<div class="msgWrap form">
+<div class="content">
+<div class="cLineC" style="line-height: 32px;"> 
+<a href="{pigcms::U('Voteimg/add_item',array('token'=>$token,'vote_id'=>$vote_id))}" class="btnGrayS vm bigbtn">添加投票选项</a>  
+<a href="{pigcms::U('Voteimg/index',array('token'=>$token))}" class="right btnGrayS vm" style="margin-top:1px">返回投票列表</a>
+</div>
+    <table class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="100%">
+	<thead>
+	<tr>
+	  <th style="width:10%;">选项标题</th>
+	  <th style="width:15%;">图片地址</th>
+	  <th style="width:15%;">图片跳转地址</th>
+	 <th style="width:10%;">票数</th>
+	 <th style="width:10%;">联系方式</th>
+	</th>
+	<th>操作</th>
+	</tr>
+	</thead>
+	<if condition="$list neq ''">
+	<volist name="list" id="vo">
+	  <tbody><tr>
+		  <td>{pigcms:$vo.vote_title}</td>
+		  <td><img src="{pigcms:$vo.vote_img}" width="100px" height="100px"/><input type="hidden" value="{pigcms:$vo.vote_img}" id="img_{pigcms:$vo.id}"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a onclick="viewImg('img_{pigcms:$vo.id}')" href="###">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#4a98e0;">预览</span></a></td>
+		  <td>{pigcms:$vo.jump_url}</td>
+		  <td>{pigcms:$vo.vote_count}</td>
+		   <td>{pigcms:$vo.contact}</td>
+		  <td class="norightborder">
+		  <a href="{pigcms::U('Voteimg/edit_item',array('id'=>$vo['id'],'token'=>$token))}" class="btnGreen">编辑选项</a>
+		  <a href="{pigcms::U('Voteimg/del_item',array('id'=>$vo['id']))}" onclick="return(confirm('确定要删除吗？'))" class="btnGreen">删除</a> </td>
+		</tr>
+	  </tbody>
+	</volist> 
+	<else />
+		  <tbody><tr><td colspan="7" align="center">暂无投票选项,请添加</td></tr>
+	  </tbody>
+	</if>
+	</table>
+	<div class="footactions" style="padding-left:10px">
+	  <div class="pages" style="text-align:right;"> {pigcms:$page}</div>
+	</div>
+    </div>
+  </div>
+<include file="Public:footer"/>

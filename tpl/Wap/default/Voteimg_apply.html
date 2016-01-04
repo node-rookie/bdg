@@ -1,0 +1,91 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>{pigcms:$voteimg['reply_title']}---报名</title>
+<link type="text/css" rel="stylesheet" href="{pigcms:$staticPath}/tpl/static/voteimg/css/style.css">
+<script type="text/javascript" src="{pigcms:$staticPath}/tpl/static/voteimg/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="{pigcms:$staticPath}/tpl/static/voteimg/js/exif.js"></script>
+<script type="text/javascript" src="{pigcms:$staticPath}/tpl/static/voteimg/js/imgUpload.js"></script>
+<style>
+.upload_box .upload_list .upload_item,.upload_box .upload_list .upload_action{width:25%;margin:0 0 0 -3%;float:left;position:relative;display:-webkit-box;-webkit-box-pack:center;-webkit-box-align:center;border:solid 5px #fff;-webkit-box-sizing:border-box;overflow:hidden}.upload_box .upload_list .loading_item{background:url({pigcms:$staticPath}/tpl/static/voteimg/img/upimg_loading.gif) 0 0 no-repeat;background-size:cover}.upload_box .upload_action #fileImage{opacity:0;position:absolute;left:0;top:0;width:100%;height:100%}.upload_box .upload_item img{max-width:100%;max-height:100%;display:none}.upload_box .upload_action img{display:block;width:100%}.upload_box .upload_list .upload_item .upload_delete{position:absolute;top:0;right:0;width:20px;height:20px;line-height:20px;background:url({pigcms:$staticPath}/tpl/static/voteimg/img/upimg_x.png) no-repeat;background-size:cover}.upload_box .upload_item_hide{opacity:0;-webkit-transition:opacity 1s}
+</style>
+</head>
+<body id="body"  style="background-color:#fff;"> 
+<div  id="baodiv1">
+<div id="bao_from">
+<div id="baodiv2">必须上传最少1张照片,最多上传5张,图片大小不能超过2M,前台展示默认第一张。<span style="color:red">请等待图片上传完成后再点"报名"提交。</span></div></div>
+<form method="POST" action="{pigcms::U('Voteimg/apply')}" enctype="multipart/form-data" id="apply">
+<div id="up_from">  
+<label for="textfield"></label>
+<input type="text" name="vote_title" id="vote_title" class="sec_input" placeholder="输入标题或姓名">
+  </div>
+<div id="up_from" style="height:auto">
+ <label for="textarea"></label>
+ <textarea name="introduction" id="introduction" cols="45" rows="5"  class="baotext" placeholder="输入自我介绍，个人详情!最多100字..."></textarea>
+ </div>
+ <div id="up_from" style="height:auto">
+ <label for="textarea"></label>
+ <textarea name="manifesto" id="manifesto" cols="45" rows="5"  class="baotext" placeholder="拉票宣言!最多100字..."></textarea>
+ </div>
+  <div id="up_from">  
+    <label for="textfield2"></label>
+    <input type="text" name="contact" id="contact" class="sec_input" placeholder="联系方式">
+    </div>
+
+ <div class="upload_box">
+ 		<ul class="upload_list clearfix" id="upload_list">
+			<li class="upload_action">
+				<img src="{pigcms:$staticPath}/tpl/static/voteimg/img/upimg.png" width='100px'>
+				<input type="file" accept="image/jpg,image/jpeg,image/png,image/gif" id="fileImage" name="filename" id="baodinpu">
+			</li>
+		</ul>
+<!--input type="file" name="vote_img" id="baodinpu"-->
+</div>
+ <!--图片上传--> 
+ </div>
+	<input type="hidden" name="vote_id" value="{pigcms:$vote_id}" />
+	<input type="hidden" name="token" value="{pigcms:$token}" />
+ <button id="tijiao" style="margin-top:0px;">报名</button> 
+</form>
+</div>
+<script>
+$(function(){
+	$("#tijiao").click(function(){
+		var vote_title = $("#vote_title").val();
+		var introduction = $("#introduction").val();
+		var contact = $("#contact").val();
+		var msg = '';
+		if(vote_title == ''){
+			msg += '标题不能为空\n';
+		}
+		if(introduction == ''){
+			msg += '自我介绍不能为空\n';
+		}
+		if(contact == ''){
+			msg += '联系方式不能为空\n';
+		}
+		if(introduction.length > 100){
+			msg += '最多100字';
+		}
+		if(msg != ''){
+			alert(msg);
+			return false;
+		}
+		$("#apply").submit();
+	});
+});
+$(function() {
+    if ($(".upload_list").length) {
+        var imgUpload = new ImgUpload({
+            fileInput: "#fileImage",
+            container: "#upload_list",
+            countNum: "#uploadNum",
+			url:"/index.php?g=Wap&m=Voteimg&a=ajaxImgUpload",
+        });
+    }
+});
+</script>
+</body></html>
