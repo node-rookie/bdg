@@ -701,6 +701,80 @@ CREATE TABLE IF NOT EXISTS `tp_article` (
 -- --------------------------------------------------------
 
 --
+-- 表的结构 `tp_mbvote`
+--
+
+CREATE TABLE IF NOT EXISTS `tp_mbvote` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(50) NOT NULL,
+  `keyword` varchar(60) NOT NULL,
+  `token` varchar(50) NOT NULL,
+  `type` char(5) NOT NULL COMMENT 'text/img 文本/图片',
+  `picurl` varchar(500) NOT NULL,
+  `showpic` tinyint(4) NOT NULL COMMENT '是否显示图片',
+  `info` varchar(5000) NOT NULL DEFAULT '',
+  `statdate` int(11) NOT NULL,
+  `enddate` int(11) NOT NULL,
+  `display` tinyint(4) NOT NULL COMMENT '1投票前0投票后2投票结束',
+  `cknums` tinyint(3) NOT NULL DEFAULT '1' COMMENT '最多可选择，默认1',
+  `status` tinyint(4) NOT NULL DEFAULT '0',
+  `sl` int(11) NOT NULL,
+  `count` int(11) NOT NULL DEFAULT '0',
+  `refresh` tinyint(4) NOT NULL,
+  `is_reg` tinyint(4) NOT NULL,
+  `ps` int(11) DEFAULT NULL,
+  `spicurl` varchar(255) NOT NULL,
+  `showhb` tinyint(4) NOT NULL,
+  `tbpic` varchar(255) NOT NULL,
+  `bgpic` varchar(255) NOT NULL,
+  `click` varchar(255) DEFAULT '0',
+  `tel` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  FULLTEXT KEY `title` (`title`),
+  FULLTEXT KEY `keyword` (`keyword`),
+  FULLTEXT KEY `token` (`token`),
+  FULLTEXT KEY `type` (`type`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=96 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `tp_mbvote_item`
+--
+
+CREATE TABLE IF NOT EXISTS `tp_mbvote_item` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `vid` int(11) NOT NULL COMMENT 'vote_id',
+  `item` varchar(50) NOT NULL,
+  `vcount` int(11) NOT NULL,
+  `startpicurl` varchar(200) NOT NULL DEFAULT '',
+  `tourl` varchar(200) NOT NULL DEFAULT '',
+  `rank` int(11) NOT NULL COMMENT '排序',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=266 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `tp_mbvote_record`
+--
+
+CREATE TABLE IF NOT EXISTS `tp_mbvote_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `item_id` varchar(50) NOT NULL COMMENT '投票项 1,2,3,',
+  `vid` int(11) NOT NULL,
+  `wecha_id` varchar(100) NOT NULL,
+  `touched` tinyint(4) NOT NULL,
+  `touch_time` int(11) NOT NULL COMMENT '投票日期',
+  `token` varchar(50) NOT NULL DEFAULT '',
+  `trueip` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=137 ;
+
+-- --------------------------------------------------------
+
+--
 -- 表的结构 `tp_attribute`
 --
 
