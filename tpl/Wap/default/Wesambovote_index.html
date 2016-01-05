@@ -142,7 +142,7 @@ z-index: 20000;
 </style>
 <div class="box03"><b onclick="document.getElementById('mcover{pigcms:$key}').style.display='none';document.getElementById('video{pigcms:$key}').firstChild.setAttribute('src',document.getElementById('video{pigcms:$key}').firstChild.getAttribute('src'));"></b>
 <!--<img src="{pigcms:$li.startpicurl}" width="100%" />-->
-<div class='video' id="video{pigcms:$key}">{pigcms:$li.tourl}</div>
+<div class='video' style="margin-top: 20px" id="video{pigcms:$key}">{pigcms:$li.tourl}</div>
 <h2>{pigcms:$key}号  {pigcms:$li.item}</h2>
 <h3><strong>--------</strong> 已有<span class="nums{pigcms:$li.id}">{pigcms:$li.vcount}</span>票 <strong>--------</strong></h3>
 <button class="greenbutton but button{pigcms:$li.id}" onclick="voteid('{pigcms:$li.id}','{pigcms:$li.vcount}')" >投票</button>
