@@ -4,7 +4,7 @@ return array (
   'site_name' => '春哥微信',
   'site_title' => '春哥pigcms微信营销系统二次开发拼好货商城特别版',
   'site_logo' => 'http://bdg.wenode.org/uploads/w/wvibhg1434526733/4/1/b/6/thumb_55bde06a0af1b.png',
-  'site_url' => 'http://bdg.wenode.org/',
+  'site_url' => 'http://bdg.wenode.org',
   'site_twm' => 'http://bdg.wenode.org/uploads/w/wvibhg1434526733/3/a/7/f/thumb_55bde11633b94.jpg',
   'site_my' => '春哥',
   'server_key' => '00af34cbec35644570ce9d7d6eeeaca7',
