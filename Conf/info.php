@@ -1,12 +1,12 @@
 <?php 
 return array (
   'pigcms_debug' => '0',
-  'site_name' => '春哥微信',
-  'site_title' => '春哥pigcms微信营销系统二次开发拼好货商城特别版',
+  'site_name' => '跟谁学',
+  'site_title' => '跟谁学',
   'site_logo' => 'http://bdg.wenode.org/uploads/w/wvibhg1434526733/4/1/b/6/thumb_55bde06a0af1b.png',
   'site_url' => 'http://bdg.wenode.org',
   'site_twm' => 'http://bdg.wenode.org/uploads/w/wvibhg1434526733/3/a/7/f/thumb_55bde11633b94.jpg',
-  'site_my' => '春哥',
+  'site_my' => '跟谁学',
   'server_key' => '00af34cbec35644570ce9d7d6eeeaca7',
   'liaotian_key' => '00af34cbec35644570ce9d7d6eeeaca7',
   'appid' => 'wx923696ebb320df89',
@@ -32,9 +32,9 @@ return array (
   'site_mp' => '2994-655-707',
   'baidu_map_api' => 'bSxPhqLO5f7nLBZyNRUGyHDN',
   'site_email' => '2994655707@qq.com',
-  'keyword' => '春哥技术博客，移动互联网会员管理与营销系统。,微信公众号,支付宝服务窗,微信会员卡,微商城,微分销,微信订餐',
-  'content' => '春哥技术博客--关注建站技术,服务中小站长的IT技术型独立博客。春哥技术博客致力于分享建站技术、微信开发技术、定制开发网站模板,定制开发企业网站,是一个服务中小站长企业的技术型独立博客。',
+  'keyword' => '跟谁学，移动互联网会员管理与营销系统。,微信公众号,支付宝服务窗,微信会员卡,微商城,微分销,微信订餐',
+  'content' => '跟谁学--关注建站技术,服务中小站长的IT技术型独立博客。春哥技术博客致力于分享建站技术、微信开发技术、定制开发网站模板,定制开发企业网站,是一个服务中小站长企业的技术型独立博客。',
   'countsz' => '',
-  'copyright' => 'Copyright (c) 2014-2015  春哥技术博客  版权所有',
+  'copyright' => 'Copyright (c) 2014-2015  跟谁学  版权所有',
   'close_help' => '0',
 );
