@@ -155,7 +155,7 @@ class WeixinAction extends Action
 		}
 
 		if ($this->user['viptime'] < time()) {
-			return array('您的账号已经过期，请联系' . $this->siteUrl . user['viptime'], 'text');
+			return array('您的账号已经过期，请联系' . $this->siteUrl . $this->user['viptime'], 'text');
 		}
 
 		$eventReplyClassName = $data['Event'] . 'EventReply';
