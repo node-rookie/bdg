@@ -131,7 +131,7 @@ CREATE TABLE IF NOT EXISTS `tp_adma` (
 --
 
 INSERT INTO `tp_adma` (`id`, `uid`, `token`, `url`, `copyright`, `info`, `title`) VALUES
-(1, 14, 'nmalez1432885029', 'http://s.404.cn/tpl/Home/new/common/images/ewm2.jpg', '© 2001-2013 某某微信版权所有', '微信营销管理平台为个人和企业提供基于微信公众平台的一系列功能，包括智能回复、微信3G网站、互动营销活动，会员管理，在线订单，数据统计等系统功能,带给你全新的微信互动营销体验。', '春哥技术博客');
+(1, 14, 'nmalez1432885029', 'http://s.404.cn/tpl/Home/new/common/images/ewm2.jpg', '© 2001-2013 某某微信版权所有', '微信营销管理平台为个人和企业提供基于微信公众平台的一系列功能，包括智能回复、微信3G网站、互动营销活动，会员管理，在线订单，数据统计等系统功能,带给你全新的微信互动营销体验。', '跟谁学技术博客');
 
 -- --------------------------------------------------------
 
@@ -675,7 +675,7 @@ INSERT INTO `tp_areply` (`id`, `keyword`, `content`, `uid`, `uname`, `createtime
 (13, '首页', '你好', 24, '', '1433821042', '1433822249', 'wdsssk1433816204', '0'),
 (14, '', '你好', 24, '', '1433827558', '1433827691', 'drgivy1433823286', '0'),
 (15, 'hguhki', '111', 23, '', '1433828203', '', 'qnvhfc1433411525', '0'),
-(17, '', '欢迎关注我，我是小美，春哥技术博客联合春雨网络工作室共同研发的智能聊天机器人，如果想和我聊天，我随时有空哦。', 36, '', '1439255751', '1439260681', 'jsmljr1439254916', '0');
+(17, '', '欢迎关注我，我是小美，跟谁学技术博客联合春雨网络工作室共同研发的智能聊天机器人，如果想和我聊天，我随时有空哦。', 36, '', '1439255751', '1439260681', 'jsmljr1439254916', '0');
 
 -- --------------------------------------------------------
 
@@ -1914,7 +1914,7 @@ INSERT INTO `tp_behavior` (`id`, `fid`, `token`, `openid`, `date`, `enddate`, `m
 (829, 0, 'jsmljr1439254916', 'oRYdQt-iykhc-Pjp7Y4pHsD_h_R8', '2015-08-21', 1440139246, 'chat', 1, '我要自由', 0),
 (830, 0, 'jsmljr1439254916', 'oRYdQtwSlmQN09MssB8-Tyy7ceyw', '2015-08-21', 1440156104, 'chat', 1, 'pigcmsV8.4解压码', 0),
 (831, 0, 'jsmljr1439254916', 'oRYdQt0Dnspemzd2n-X3k-lYSskw', '2015-08-21', 1440166752, 'chat', 1, '你好', 0),
-(832, 0, 'jsmljr1439254916', 'oRYdQt0Dnspemzd2n-X3k-lYSskw', '2015-08-21', 1440166761, 'chat', 1, '春哥', 0),
+(832, 0, 'jsmljr1439254916', 'oRYdQt0Dnspemzd2n-X3k-lYSskw', '2015-08-21', 1440166761, 'chat', 1, '跟谁学', 0),
 (833, 0, 'jsmljr1439254916', 'oRYdQtwdVQgk3Tm8SzdDAtJ8sc4s', '2015-08-21', 1440169855, 'chat', 1, '有自由门的最新版软件吗', 0),
 (834, 0, 'jsmljr1439254916', 'oRYdQtwdVQgk3Tm8SzdDAtJ8sc4s', '2015-08-21', 1440169872, 'chat', 1, 'fg752呢', 0),
 (835, 0, 'jsmljr1439254916', 'oRYdQtwdVQgk3Tm8SzdDAtJ8sc4s', '2015-08-21', 1440169890, 'chat', 1, '自由门fg752', 0),
@@ -5210,7 +5210,7 @@ CREATE TABLE IF NOT EXISTS `tp_funintro` (
 --
 
 INSERT INTO `tp_funintro` (`id`, `title`, `isnew`, `logo`, `type`, `content`, `time`, `img1`, `img2`, `img3`, `img4`, `img5`, `img6`, `img7`, `img8`, `name1`, `name2`, `name3`, `name4`, `name5`, `name6`, `name7`, `name8`, `class`, `classid`) VALUES
-(2, '关于我们', 0, '', 1, '春哥技术博客致力于分享建站技术、微信开发技术、定制开发网站模板,定制开发企业网站,是一个服务中小站长企业的技术型独立博客。<br />', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0),
+(2, '关于我们', 0, '', 1, '跟谁学技术博客致力于分享建站技术、微信开发技术、定制开发网站模板,定制开发企业网站,是一个服务中小站长企业的技术型独立博客。<br />', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0),
 (3, '软灵通介绍', 0, '', 1, '软灵通介绍', 0, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 0);
 
 -- --------------------------------------------------------
@@ -6454,7 +6454,7 @@ CREATE TABLE IF NOT EXISTS `tp_links` (
 --
 
 INSERT INTO `tp_links` (`id`, `name`, `url`, `status`, `agentid`) VALUES
-(1, '春哥技术博客', 'http://www.cgtblog.com', '1', 0);
+(1, '跟谁学技术博客', 'http://www.cgtblog.com', '1', 0);
 
 -- --------------------------------------------------------
 
@@ -9544,7 +9544,7 @@ CREATE TABLE IF NOT EXISTS `tp_new_product_set_reply` (
 
 INSERT INTO `tp_new_product_set_reply` (`id`, `cid`, `token`, `keyword`, `title`, `info`, `logourl`, `name`, `wecha_id`) VALUES
 (2, 22, 'cohuek1432710740', '分销商城', '芷伊蘭分销商城', '芷伊蘭分销商城', 'http://www.softphs.com/tpl/static/attachment/background/view/4.jpg', '', ''),
-(3, 25, 'jsmljr1439254916', '商城', '欢迎使用微商城系统', '欢迎使用春哥技术博客开发的微商城系统', 'http://mp.cgtblog.com/uploads/j/jsmljr1439254916/6/3/7/5/thumb_55c9a522e3ed9.JPG', 'cyeagle', '');
+(3, 25, 'jsmljr1439254916', '商城', '欢迎使用微商城系统', '欢迎使用跟谁学技术博客开发的微商城系统', 'http://mp.cgtblog.com/uploads/j/jsmljr1439254916/6/3/7/5/thumb_55c9a522e3ed9.JPG', 'cyeagle', '');
 
 -- --------------------------------------------------------
 
