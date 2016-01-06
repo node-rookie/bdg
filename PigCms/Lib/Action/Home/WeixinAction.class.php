@@ -1349,6 +1349,24 @@ class WeixinAction extends Action
 		),
 	'news'
 	);
+
+				case 'Mbvote':
+					$this->requestdata('other');
+					$pro = M('Mbvote')->where(array(
+						'id' => $data['pid']
+					))->find();
+					return array(
+						array(
+							array(
+								$pro['title'],
+								strip_tags(htmlspecialchars_decode($pro['info'])),
+								$pro['picurl'],
+								$this->siteUrl . '/index.php?g=Wap&m=Wesambovote&a=index&id=' . $data['pid'] . '&token=' . $this->token . '&wecha_id=' . $this->data['FromUserName'] . ''
+							)
+						),
+						'news'
+					);
+					break;
 				default:
 					$replyClassName = $data['module'] . 'Reply';
 
