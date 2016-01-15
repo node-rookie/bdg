@@ -67,7 +67,7 @@ class WapAction extends BaseAction
 		$this->owxuser = $this->wxuser;
 		$this->assign('wxuser', $this->wxuser);
 		$fake = 0;
-		if ((($this->wxuser['winxintype'] != 3) || ($this->wxuser['oauth'] == 0)) && $this->_appid && $this->_secret) {
+		if ((($this->wxuser['winxintype'] != 3) || ($this->wxuser['oauth'] == 1)) && $this->_appid && $this->_secret) {
 			if (!$this->isAgent) {
 				$this->wxuser['appid'] = trim($this->_appid);
 				$this->wxuser['appsecret'] = trim($this->_secret);
