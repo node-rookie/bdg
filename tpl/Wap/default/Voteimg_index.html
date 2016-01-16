@@ -17,7 +17,7 @@
 <style>
 #olli{
 	margin-top:1%;
-	margin-left:1%;
+	margin-left:2%;
 }
 </style>
 </head>
@@ -141,16 +141,16 @@
                 </div></dd>    
               </dl>
 			</if>
-		  <if condition="$menu[3]['hide'] eq 1">
-              <dl>
-                <dt><div id="article_pic"><img src="<php>if(strpos($menu[3]['menu_icon'],'http') !== false){ echo $menu[3]['menu_icon'];}else{ echo $staticPath.$menu[3]['menu_icon'];}</php>"   /></div>
-                  <div id="article_word">
-                     {pigcms:$menu[3]['menu_name']}
-                  </div>
-                </dt>
-                <dd id="vote_record"></dd>
-              </dl>
-			</if>
+		  <!--<if condition="$menu[3]['hide'] eq 1">-->
+              <!--<dl>-->
+                <!--<dt><div id="article_pic"><img src="<php>if(strpos($menu[3]['menu_icon'],'http') !== false){ echo $menu[3]['menu_icon'];}else{ echo $staticPath.$menu[3]['menu_icon'];}</php>"   /></div>-->
+                  <!--<div id="article_word">-->
+                     <!--{pigcms:$menu[3]['menu_name']}-->
+                  <!--</div>-->
+                <!--</dt>-->
+                <!--<dd id="vote_record"></dd>-->
+              <!--</dl>-->
+			<!--</if>-->
 		  <!--<if condition="$menu[4]['hide'] eq 1">-->
               <!--<dl>-->
                 <!--<a href="javascript:;" onclick="window.location.href='/index.php?g=Wap&m=Voteimg&a=apply&id={pigcms:$id}&token={pigcms:$token}'">  <dt><div id="article_pic"><img src="<php>if(strpos($menu[4]['menu_icon'],'http') !== false){ echo $menu[4]['menu_icon'];}else{ echo $staticPath.$menu[4]['menu_icon'];}</php>"/></div>-->
@@ -207,7 +207,15 @@
 				<div id="detail" class="detail" style="display: block">  
                   <div id="content_li"  style="position:absolute; margin-top:15px;">
 				  <volist name="alllist" id="all">
-					<ol class="li" id="olli"><div id="content_tab"><div><div id="content_pic"><if condition="$all.jump_url neq ''"><a href="{pigcms:$all.jump_url}"><img src="{pigcms:$all.vote_img}" /></a><else /><a href="{pigcms::U('Voteimg/popup_view',array('id'=>$all['vote_id'],'token'=>$all['token'],'item_id'=>$all['id']))}"><img src="{pigcms:$all.vote_img}" /></a></if></div></div><div id="content_xinxi">{pigcms:$all.baby_id}号&nbsp;&nbsp;{pigcms:$all.vote_title}</div><div id="content_result"><div id="content_rebu"> <button class="STYLE1" id="content_button" onclick="vote({pigcms:$all.id})">投票</button></div><div  id="content_piao">{pigcms:$all.vote_count}票</div></div></div></ol>
+					<ol class="li" id="olli"><div id="content_tab"><div><div id="content_pic"><if condition="$all.jump_url neq ''"><i class="number">{pigcms:$all.baby_id}号</i><a href="{pigcms:$all.jump_url}"><img src="{pigcms:$all.vote_img}" /></a><else /><i class="number">{pigcms:$all.baby_id}号</i><a href="{pigcms::U('Voteimg/popup_view',array('id'=>$all['vote_id'],'token'=>$all['token'],'item_id'=>$all['id']))}"><img src="{pigcms:$all.vote_img}" /></a></if></div></div>
+						<!--<div id="content_xinxi">{pigcms:$all.baby_id}号&nbsp;&nbsp;{pigcms:$all.vote_title}</div><div id="content_result"><div id="content_rebu"> <button class="STYLE1" id="content_button" onclick="vote({pigcms:$all.id})">投票</button></div><div  id="content_piao">{pigcms:$all.vote_count}票</div></div></div>-->
+						<div class="clearfix">
+							<p>                                    {pigcms:$all.vote_title}<br>
+								{pigcms:$all.vote_count}票
+							</p>
+							<a class="STYLE1" id="content_button" onclick="vote({pigcms:$all.id})">投票</a>
+						</div>
+					</ol>
 				  </volist>
 			</div>
 			</div>
