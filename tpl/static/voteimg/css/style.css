@@ -1,7 +1,7 @@
 #body{ text-align:center; font-family: "Microsoft YaHei";   font-size:14px;   line-height:30px; margin:0 auto; background:#eee;  }
 #div{ height:auto; width:100%; margin:0 auto; }
 #pic{ height:200px; width:100%;}
-#main{ width:100%; height:158px; padding-top:10px ;padding-bottom:10px;background:#72c0e6;line-height:20px;color:#ffff00;}
+#main{ width:100%; height:160px; padding-top:10px ;padding-bottom:10px;background:#72c0e6;line-height:20px;color:#ffff00;}
 #main .join_us {display: block;  width: 230px;  height: 45px;  margin: 25px auto;  background: #f67685;  border-bottom: 5px solid #d45158;  border-radius: 10px;  text-align: center;  color: #fff;  font-size: 19px;  line-height: 45px;  }
 #main img {width: 100%; display: block;}
 #main_1{ width:32%; float:left; border-right:1px #ffff00 solid; }
@@ -23,7 +23,7 @@ margin:0 auto;
 color: #F4F7FC;
 }
 #contentla{
-background-color:#fff;
+background-color:#E3F5FF;
 width:100%;
 height:auto;
 padding-top:10px;
@@ -89,7 +89,7 @@ width:expression(document.body.clientWidth>document.getElementById("content_pic"
 #content_xinxi{ width:100%; height:30px; background:#eee; text-align:center; line-height:30px; font-size:16px; color:#656565}
 #content_result{ width:100%; height:auto; padding-top:10px;}
 #content_rebu{ width:50%; float:left; }
-#content_button {
+#vote_button {
     float: right;
     width: 30%;
     height: 50px;
@@ -99,6 +99,7 @@ width:expression(document.body.clientWidth>document.getElementById("content_pic"
     font-size: 16px;
     text-align: center;
 }
+#content_button{ width:90%;height:50%; text-align:center;border-radius: 9px; background-color:#f67685; margin:0 auto;border:1px; line-height:30px;}
 #content_piao{ width:50%; float:left; text-align:center; color:#FF0000; font-size:16px; line-height:30px; }
 .word {
 font-family: "Microsoft YaHei";
