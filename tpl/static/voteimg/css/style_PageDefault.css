@@ -18,8 +18,8 @@
 .content_left .settab #J_setTabANav { float:left; width:auto; }
 .content_left .settab #J_setTabABox { clear:both;   min-height:200px;float:left; }
 .content_left .settab .tab-menu { margin-right:0px; text-align:center; float:left; width:auto; }
-.content_left .settab .tab-menu span { line-height:30px; text-align:center; float:left;   font-size:15px;  cursor:pointer; margin-bottom:-1px; color:#000; width:100%; background:#fff}
-.content_left .settab #J_setTabANav .hover span { border-bottom:0; background:#2dcc70; color:#fff; z-index:100;   width:100%;  font-weight: normal;}
+.content_left .settab .tab-menu span { line-height:30px; text-align:center; float:left;   font-size:15px;  cursor:pointer; margin-bottom:-1px; color:#fff; width:100%; background:#72c0e6}
+.content_left .settab #J_setTabANav .hover span { border-bottom:0; background:#047ab3; color:#fff; z-index:100;   width:100%;  font-weight: normal;}
 .content_left .settab #productsindex1,
  .settab #featuredProducts { width:100%; }
 .content_left .settab #productsindex1 .pule { overflow:hidden; width:100%; border:0; }
