@@ -1,8 +1,8 @@
 #body{ text-align:center; font-family: "Microsoft YaHei";   font-size:14px;   line-height:30px; margin:0 auto; background:#eee;  }
 #div{ height:auto; width:100%; margin:0 auto; }
 #pic{ height:200px; width:100%;}
-#main{ width:100%; height:40px; padding-top:10px ;padding-bottom:10px;background:#fff;line-height:20px;}
-#main_1{ width:32%; float:left; border-right:1px #CCCCCC solid; }
+#main{ width:100%; height:40px; padding-top:10px ;padding-bottom:10px;background:#72c0e6;line-height:20px;color:#ffff00;}
+#main_1{ width:32%; float:left; border-right:1px #ffff00 solid; }
 #main_2{ width:32%; float:left; }
 #main_1_1{ width:100%; height:40%;}
 #main_1_2{ width:100%; height:40%;}
@@ -62,10 +62,10 @@ width:expression(document.body.clientWidth>document.getElementById("content_pic"
 font-family: "Microsoft YaHei";
 }
 .s {
-font-family: "¿¬Ìå";
+font-family: "ï¿½ï¿½ï¿½ï¿½";
 }
 .r {
-font-family: "·ÂËÎ";
+font-family: "ï¿½ï¿½ï¿½ï¿½";
 }
 
 #foot{position:relative;bottom:0px;width:100%; ;position:fixed;line-height:0;font-size:16px; color:#fff; background:#404a56}
@@ -333,7 +333,7 @@ color:#000;
   margin-left: 25%;
   margin-top: 40px;}
   
-/**µ¯¿òÑùÊ½**/
+/**ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½**/
 html,body {height:100%; margin:0px; font-size:12px;}
 .myDiv {
 z-index:99;
@@ -341,7 +341,7 @@ left:65%;
 top: 30%;
 width:200px;
  height:40px; 
- line-height:40px;color:#fff; font-size:18px;  border-radius: 9px;  background-color: #2dcc70;  margin: 0 auto; text-align:center; font-family:'Î¢ÈíÑÅºÚ';
+ line-height:40px;color:#fff; font-size:18px;  border-radius: 9px;  background-color: #2dcc70;  margin: 0 auto; text-align:center; font-family:'Î¢ï¿½ï¿½ï¿½Åºï¿½';
 
 margin-left:-150px!important;
 margin-top:-60px!important;
