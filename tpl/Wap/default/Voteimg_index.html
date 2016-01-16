@@ -50,6 +50,7 @@
     </div>
     
     <div id="main">
+		<a href="javascript:;" onclick="window.location.href='/index.php?g=Wap&m=Voteimg&a=apply&id={pigcms:$id}&token={pigcms:$token}'" class="join_us">我要报名</a>
 	<if condition="$hide neq 2">
       <div id="main_1">
         <div id="main_1_1">
@@ -74,6 +75,7 @@
       <div id="main_c"></div>
     </div>
 	</if>
+		<img src="/tpl/static/voteimg/img/mw_004.jpg">
   </div>
   <!--参与 -->
   <nav id="article">
@@ -146,18 +148,18 @@
                      {pigcms:$menu[3]['menu_name']}
                   </div>
                 </dt>
-                <dd id="vote_record"></dd>   
+                <dd id="vote_record"></dd>
               </dl>
 			</if>
-		  <if condition="$menu[4]['hide'] eq 1">
-              <dl>
-                <a href="javascript:;" onclick="window.location.href='/index.php?g=Wap&m=Voteimg&a=apply&id={pigcms:$id}&token={pigcms:$token}'">  <dt><div id="article_pic"><img src="<php>if(strpos($menu[4]['menu_icon'],'http') !== false){ echo $menu[4]['menu_icon'];}else{ echo $staticPath.$menu[4]['menu_icon'];}</php>"/></div>
-                  <div id="article_word">
-                   {pigcms:$menu[4]['menu_name']}
-                  </div></dt>
-                </a>   
-              </dl>
-			  </if>
+		  <!--<if condition="$menu[4]['hide'] eq 1">-->
+              <!--<dl>-->
+                <!--<a href="javascript:;" onclick="window.location.href='/index.php?g=Wap&m=Voteimg&a=apply&id={pigcms:$id}&token={pigcms:$token}'">  <dt><div id="article_pic"><img src="<php>if(strpos($menu[4]['menu_icon'],'http') !== false){ echo $menu[4]['menu_icon'];}else{ echo $staticPath.$menu[4]['menu_icon'];}</php>"/></div>-->
+                  <!--<div id="article_word">-->
+                   <!--{pigcms:$menu[4]['menu_name']}-->
+                  <!--</div></dt>-->
+                <!--</a>   -->
+              <!--</dl>-->
+			  <!--</if>-->
 			  <volist name="custom_menu" id="me">
 			   <dl>
 			    <a href="javascript:;" onclick="window.location.href='{pigcms:$me.menu_link}'">
